@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="语料库语言学">
+<meta name="description" content="温故而知新">
+<meta name="theme-color" content="#212529">
+<title>Zero-sum: The destructive new logic that threatens globalisation | ZRSBLOG</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1680867863009">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css"
+  rel="stylesheet">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+  <meta name="description" content="Zero-sum: The destructive new logic that threatens globalisation" />
+  <meta name="keywords" content="" />
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>ZRSBLOG</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">精于心，简于形</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/about/" target="_self">
+                  <i class="fa fa-globe"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout gemini ">
+      <div class="section-layout-wrapper">
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">rzhang</p>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://zrszrs.cn/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
+  
+
+  
+
+
+</div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper  auto"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#integration-and-differentiation">Integration and differentiation</a></li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
+      }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
+    });
+  }
+
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
+    }
+  }
+
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
+    }
+  }
+
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
+  }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
+
+</script>
+            </div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://zrszrs.cn/_yc-3p9ja/">
+      Zero-sum: The destructive new logic that threatens globalisation
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2023-01-18</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>8分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>1223<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+            <div class="post-body next-md-body" id="post_body">
+              <p>America is leading a dangerous global slide towards subsidies, export controls and protectionism</p>
+<!-- more -->
+<p>Since 1945 the world economy has run according to a system of rules and norms underwritten by America. This brought about unprecedented economic integration that boosted growth, lifted hundreds of millions of people out of poverty and helped the West prevail over Soviet Russia in the cold war. Today the system is in peril. Countries are racing to subsidise green industry, lure manufacturing away from friend and foe alike and restrict the flow of goods and capital. Mutual benefit is out and national gain is in. An era of zero-sum thinking has begun.<br>
+The old system was already under strain, as America’s interest in maintaining it waned after the global financial crisis of 2007-09. But President Joe Biden’s abandonment of free-market rules for an aggressive industrial policy has dealt it a fresh blow. America has unleashed vast subsidies, amounting to $465bn, for green energy, electric cars and semiconductors. These are laced with requirements that production should be local. Bureaucrats tasked with scrutinising inward investments to prevent undue foreign influence over the economy now themselves hold sway over sectors making up 60% of the stockmarket. And officials are banning the flow of ever more exports—notably of high-end chips and chipmaking equipment to China.<br>
+For many in Washington, muscular industrial policy holds a seductive appeal. It could help seal America’s technological ascendancy over China, which has long pursued self-sufficiency in vital areas using state intervention. As carbon pricing is politically unfeasible, it could foster decarbonisation. And it reflects a hope that government intervention might succeed where private enterprise failed, and reindustrialise America’s heartlands.<br>
+The immediate consequence, however, has been to set off a dangerous spiral into protectionism worldwide. Build a chipmaking plant in India and the government will stump up half the cost; build one in South Korea and you can avail yourself of generous tax breaks. Should seven other market economies that have announced policies for “strategic” sectors since 2020 match America’s spending as a share of GDP, total outlays would reach $1.1trn. Last year nearly a third of the cross-border business deals that came to the attention of European officials received detailed scrutiny. Countries with the raw materials needed to make batteries are eyeing export controls. Indonesia has banned nickel exports; Argentina, Bolivia and Chile may soon collaborate, OPEC-style, on the output of their lithium mines.<br>
+Economic conflict with China looks increasingly inevitable. As China became more deeply integrated into the global economy at the turn of this century, many in the West predicted that it would become more democratic. The death of that hope—combined with the migration of a million manufacturing jobs to Chinese factories—caused America to fall out of love with globalisation. Today Mr Biden’s administration frets about the danger of depending on China for batteries the way Europe relied on Russia for gas before the invasion of Ukraine. Democrats and Republicans alike worry that the loss of America’s lead in advanced chipmaking to Taiwan will undermine its ability to develop artificial intelligence—on which, they predict, armies of the future will rely to plan strategy and guide missiles.<br>
+Some simply want to stop China becoming too rich—as if impoverishing 1.4bn people were either moral or likely to ensure peace. Others, more wisely, focus on increasing America’s economic resilience and maintaining its military edge. A reindustrialisation of the heartland, they argue, will rekindle support for market capitalism. In the meantime, as the global hegemon, America can weather other countries’ complaints.<br>
+This thinking is misguided. If zero-sum policies were seen as a success, abandoning them would only become harder. In reality, even if they do remake American industry, their overall effect is more likely to cause harm by corroding global security, holding back growth and raising the cost of the green transition.<br>
+One problem is their extra economic costs. The Economist estimates that replicating the cumulative investments of firms in the global tech-hardware, green-energy and battery industries would cost $3.1trn-4.6trn (3.2-4.8% of global GDP). Reindustrialisation will raise prices, hurting the poor most. Duplicating green supply chains will make it costlier for America and the world to wean themselves off carbon. History suggests that vast amounts of public money could go to waste.<br>
+Another problem is the fury of friends and potential allies. America’s genius after the second world war was to realise that its interests lay in supporting openness in global commerce. As a result it pursued globalisation despite, by 1960, making up nearly 40% of global dollar GDP.<br>
+Today its share of output has fallen to 25% and America needs friends more than ever. Its ban on exports to China’s chipmakers will work only if the Dutch firm ASML and Japan’s Tokyo Electron also refuse to supply them with equipment. Battery supply chains will likewise be more secure if the democratic world operates as one bloc. Yet America’s protectionism is irking allies in Europe and Asia.</p>
+<h1 id="integration-and-differentiation">Integration and differentiation</h1>
+<p>America must also woo emerging powers. By 2050 India and Indonesia will be the world’s third-and fourth-largest economies, projects Goldman Sachs, a bank. Both are democracies but not close friends of America. By 2075 Nigeria and Pakistan will have gained economic clout, too. If America demands that other countries freeze out China without offering sufficient access to its own markets then it will be spurned by rising powers.<br>
+A final worry is that the more economic conflict proliferates, the harder it becomes to solve problems that demand global collaboration. Despite racing to secure green technology, countries are squabbling over how to help the poor world decarbonise. It is proving hard to rescue countries in debt distress, such as Sri Lanka, because of obstruction by China, a big creditor. If countries cannot co-operate to tackle some problems, these will become impossible to fix and the world will suffer accordingly.<br>
+Nobody expects America to go back to the 1990s. It is right to seek to preserve its military pre-eminence and to avoid a dangerous dependence on China for crucial economic inputs. Yet this makes other forms of global integration all the more essential. It should seek the deepest co-operation between countries that is possible, given their respective values. Today this probably requires a number of overlapping forums and ad hoc deals. America should, for instance, join the Comprehensive and Progressive Agreement for Trans-Pacific Partnership, an Asian trade pact based on an earlier deal it helped write but then abandoned.<br>
+Saving globalisation may seem impossible, given the protectionist turn in American politics. But Congress’s aid to Ukraine shows that voters are not insular. Surveys suggest the popularity of free trade is recovering. There are signs that the Biden administration is responding to allies’ concerns about its subsidies.<br>
+Yet rescuing the global order will require bolder American leadership that once again rejects the false promise of zero-sum thinking. There is still time for that to happen before the system collapses completely, damaging countless livelihoods and imperilling the causes of liberal democracy and market capitalism. The task is enormous and urgent; it could hardly be more important. The clock is ticking.</p>
+
+            </div>
+            <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      rzhang
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://zrszrs.cn/_yc-3p9ja/" title="Zero-sum: The destructive new logic that threatens globalisation">https://zrszrs.cn/_yc-3p9ja/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="宝锋UV-5R中文说明书" href="https://zrszrs.cn/RdsvYnwDM/">宝锋UV-5R中文说明书</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="宝锋UV-5R中文说明书" href="https://zrszrs.cn/RdsvYnwDM/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="2022年韩素音翻译大赛试译" href="https://zrszrs.cn/2022hansuyin/">2022年韩素音翻译大赛试译</a>
+        <a class="nav-mobile-next" title="2022年韩素音翻译大赛试译" href="https://zrszrs.cn/2022hansuyin/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
+            
+  
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img src="http://blog.zrszrs.top/images/upyun.png" width="70" height="30"></a>提供CDN加速/云存储服务
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+    <div class="bg-img">
+      <img src="/media/images/catalina.jpg" />
+    </div>
+  
+  
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target","_blank");
+      }
+    })
+  }
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+</script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
+</script>
+  </div>
+</body>
+<input hidden id="copy" />
+<script>
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+  });
+</script>
+
+<!-- <div class="search-mask" id="search_mask">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <i class="fa fa-times-circle"></i>
+    </div>
+    <div class="result">
+      
+      <div class="item">
+        <a class="result-title" href="https://zrszrs.cn/RdsvYnwDM/"" data-c="
+          &lt;p&gt;&lt;a href=&#34;http://blog.zrszrs.top/images/Baofeng%E5%AF%B6%E5%B3%B0UV5R%E4%B8%AD%E6%96%87%E8%AA%AA%E6%98%8E%E6%9B%B8.pdf&#34;&gt;下载链接&lt;/a&gt;&lt;/p&gt;
+">宝锋UV-5R中文说明书</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://zrszrs.cn/_yc-3p9ja/"" data-c="
+          &lt;p&gt;America is leading a dangerous global slide towards subsidies, export controls and protectionism&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;Since 1945 the world economy has run according to a system of rules and norms underwritten by America. This brought about unprecedented economic integration that boosted growth, lifted hundreds of millions of people out of poverty and helped the West prevail over Soviet Russia in the cold war. Today the system is in peril. Countries are racing to subsidise green industry, lure manufacturing away from friend and foe alike and restrict the flow of goods and capital. Mutual benefit is out and national gain is in. An era of zero-sum thinking has begun.&lt;br&gt;
+The old system was already under strain, as America’s interest in maintaining it waned after the global financial crisis of 2007-09. But President Joe Biden’s abandonment of free-market rules for an aggressive industrial policy has dealt it a fresh blow. America has unleashed vast subsidies, amounting to $465bn, for green energy, electric cars and semiconductors. These are laced with requirements that production should be local. Bureaucrats tasked with scrutinising inward investments to prevent undue foreign influence over the economy now themselves hold sway over sectors making up 60% of the stockmarket. And officials are banning the flow of ever more exports—notably of high-end chips and chipmaking equipment to China.&lt;br&gt;
+For many in Washington, muscular industrial policy holds a seductive appeal. It could help seal America’s technological ascendancy over China, which has long pursued self-sufficiency in vital areas using state intervention. As carbon pricing is politically unfeasible, it could foster decarbonisation. And it reflects a hope that government intervention might succeed where private enterprise failed, and reindustrialise America’s heartlands.&lt;br&gt;
+The immediate consequence, however, has been to set off a dangerous spiral into protectionism worldwide. Build a chipmaking plant in India and the government will stump up half the cost; build one in South Korea and you can avail yourself of generous tax breaks. Should seven other market economies that have announced policies for “strategic” sectors since 2020 match America’s spending as a share of GDP, total outlays would reach $1.1trn. Last year nearly a third of the cross-border business deals that came to the attention of European officials received detailed scrutiny. Countries with the raw materials needed to make batteries are eyeing export controls. Indonesia has banned nickel exports; Argentina, Bolivia and Chile may soon collaborate, OPEC-style, on the output of their lithium mines.&lt;br&gt;
+Economic conflict with China looks increasingly inevitable. As China became more deeply integrated into the global economy at the turn of this century, many in the West predicted that it would become more democratic. The death of that hope—combined with the migration of a million manufacturing jobs to Chinese factories—caused America to fall out of love with globalisation. Today Mr Biden’s administration frets about the danger of depending on China for batteries the way Europe relied on Russia for gas before the invasion of Ukraine. Democrats and Republicans alike worry that the loss of America’s lead in advanced chipmaking to Taiwan will undermine its ability to develop artificial intelligence—on which, they predict, armies of the future will rely to plan strategy and guide missiles.&lt;br&gt;
+Some simply want to stop China becoming too rich—as if impoverishing 1.4bn people were either moral or likely to ensure peace. Others, more wisely, focus on increasing America’s economic resilience and maintaining its military edge. A reindustrialisation of the heartland, they argue, will rekindle support for market capitalism. In the meantime, as the global hegemon, America can weather other countries’ complaints.&lt;br&gt;
+This thinking is misguided. If zero-sum policies were seen as a success, abandoning them would only become harder. In reality, even if they do remake American industry, their overall effect is more likely to cause harm by corroding global security, holding back growth and raising the cost of the green transition.&lt;br&gt;
+One problem is their extra economic costs. The Economist estimates that replicating the cumulative investments of firms in the global tech-hardware, green-energy and battery industries would cost $3.1trn-4.6trn (3.2-4.8% of global GDP). Reindustrialisation will raise prices, hurting the poor most. Duplicating green supply chains will make it costlier for America and the world to wean themselves off carbon. History suggests that vast amounts of public money could go to waste.&lt;br&gt;
+Another problem is the fury of friends and potential allies. America’s genius after the second world war was to realise that its interests lay in supporting openness in global commerce. As a result it pursued globalisation despite, by 1960, making up nearly 40% of global dollar GDP.&lt;br&gt;
+Today its share of output has fallen to 25% and America needs friends more than ever. Its ban on exports to China’s chipmakers will work only if the Dutch firm ASML and Japan’s Tokyo Electron also refuse to supply them with equipment. Battery supply chains will likewise be more secure if the democratic world operates as one bloc. Yet America’s protectionism is irking allies in Europe and Asia.&lt;/p&gt;
+&lt;h1 id=&#34;integration-and-differentiation&#34;&gt;Integration and differentiation&lt;/h1&gt;
+&lt;p&gt;America must also woo emerging powers. By 2050 India and Indonesia will be the world’s third-and fourth-largest economies, projects Goldman Sachs, a bank. Both are democracies but not close friends of America. By 2075 Nigeria and Pakistan will have gained economic clout, too. If America demands that other countries freeze out China without offering sufficient access to its own markets then it will be spurned by rising powers.&lt;br&gt;
+A final worry is that the more economic conflict proliferates, the harder it becomes to solve problems that demand global collaboration. Despite racing to secure green technology, countries are squabbling over how to help the poor world decarbonise. It is proving hard to rescue countries in debt distress, such as Sri Lanka, because of obstruction by China, a big creditor. If countries cannot co-operate to tackle some problems, these will become impossible to fix and the world will suffer accordingly.&lt;br&gt;
+Nobody expects America to go back to the 1990s. It is right to seek to preserve its military pre-eminence and to avoid a dangerous dependence on China for crucial economic inputs. Yet this makes other forms of global integration all the more essential. It should seek the deepest co-operation between countries that is possible, given their respective values. Today this probably requires a number of overlapping forums and ad hoc deals. America should, for instance, join the Comprehensive and Progressive Agreement for Trans-Pacific Partnership, an Asian trade pact based on an earlier deal it helped write but then abandoned.&lt;br&gt;
+Saving globalisation may seem impossible, given the protectionist turn in American politics. But Congress’s aid to Ukraine shows that voters are not insular. Surveys suggest the popularity of free trade is recovering. There are signs that the Biden administration is responding to allies’ concerns about its subsidies.&lt;br&gt;
+Yet rescuing the global order will require bolder American leadership that once again rejects the false promise of zero-sum thinking. There is still time for that to happen before the system collapses completely, damaging countless livelihoods and imperilling the causes of liberal democracy and market capitalism. The task is enormous and urgent; it could hardly be more important. The clock is ticking.&lt;/p&gt;
+">Zero-sum: The destructive new logic that threatens globalisation</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://zrszrs.cn/2022hansuyin/"" data-c="
+          &lt;p&gt;很遗憾连续两年下来什么奖也没拿到，但我会一直记住它。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h1 id=&#34;疫情之下绕山依旧&#34;&gt;疫情之下，绕山依旧&lt;/h1&gt;
+&lt;p&gt;1965年，有三位诗人兼佛教徒，盖瑞·施耐德(Gary Snyder)、艾伦·金斯堡 (Allen Ginsberg)和菲力普·惠伦 (Philip Whalen)，他们绕着塔玛佩斯山（译者注：位于美国加利福尼亚州的一座山峰）步行禅修，颇有仪式感。这种做法也叫做绕山。依照传统，他们顺时针方向徒步，敲定了沿途一些著名的自然景观，并择定了在各处举行的宗教仪轨，如佛教和印度教的唱诵、持咒、诵经和发愿。&lt;/p&gt;
+&lt;p&gt;施耐德在1992年的一次采访中表示，他希望后来人在绕山时尽情发挥创造力，可以在他们三人标明的地点驻足，也可以选择在其他地方停留。&lt;/p&gt;
+&lt;p&gt;绕山是一场为了某种目的，围绕某一圣物进行的绕行仪式，这种古老的仪式发源于诸多世界文化传统。但在现代社会，绕山意味着什么？&lt;/p&gt;
+&lt;p&gt;施耐德解释说，“人们绕山旨在表达敬意，放松心态，投入其中，停下脚步，将心智付诸一物。这就是一种驻足、观察的方式——也包括自我观见。”90年代末，我在加利福尼亚大学戴维斯分校读研究生，师从施耐德学习诗歌。从他那里，我学习到，一定要观察自己身在何处，而且要准确描述我周围的世界。这便是生物区域主义的概念。&lt;/p&gt;
+&lt;p&gt;受施耐德、金斯堡、惠伦三人精神的指引，英文教授兼摄影师大卫·罗伯森（David Robertson）在上世纪90年代接过了施耐德的大旗，带领学生们去塔玛佩斯山徒步。那是1998年3月的一天，天气很冷。我和我的丈夫（当时还是男朋友）沿着盘旋的山路上山后又下山，走了十四英里。途中，我们共经过十个朝圣地，每到一处，我们便模仿施耐德三人在1965年的做法，念诵同样的佛教和印度教的咒语、经文，并发下誓愿。罗伯森的目的是带领他在加大戴维斯分校的荒野文学课的学生走出教室，踏入自然。罗伯森的课程主要就是讲斯奈德的作品，因此带学生徒步塔玛佩斯山似乎是一个不错的选择。&lt;/p&gt;
+&lt;p&gt;一路上，我跟在他们后边徒步，穿过一片片沿海禾叶栎林、花旗松林与红杉林，翻过长满草的山坡，走进飘散着加州月桂辛辣香味的雾霭。此行用了一整天的时间。即便我身体强健，热爱徒步旅行，也觉得吃不消。但是，当我们追寻着第一代绕山之人的脚步和话语，由此得以窥见历史时，流下的每一滴汗水就都值了。话虽如此，我心里还是有一个疑问，我并非佛教徒，念出这些咒语对我有什么作用呢？对于我们来说，求助于咒语的力量又是否合适呢？我们对咒语有求知欲，并诵咒表达对传统的致敬，这就够了吗？罗伯森也不是佛教徒，当我问他这件事时，他解释说，对他而言，绕塔玛佩斯山是一种让他领悟自然之道的方法。&lt;/p&gt;
+&lt;p&gt;自1965年首次有人绕山以来，无数人像罗伯森和他的学生（包括我）一样，参与到了这场活动之中，人们亲切地称这种活动为“塔姆绕”。这一传统强烈吸引着人们，因为塔玛佩斯山是受人爱戴的母亲山，她高耸入云，与代阿布洛峰（译者注：代阿布洛峰位于加州康特拉科斯塔县，高 1173 米）和蜂鸟峰（译者注：蜂鸟峰位于加州圣克拉拉县，高1063米）遥相呼应。我们无论走到哪里，看到她都会想起自己身在何处，始终牢记自己是大山的儿女。&lt;/p&gt;
+&lt;p&gt;很多因素导致2020年并不顺利，蔓延全球的疫情便是其一。2020年末时，我和丈夫，还有喜欢徒步的17岁的儿子，已经在家里憋了好几个月了。2020年夏天，我们充分利用意外的团聚时光，在加州的山林间露营、徒步、背包旅行。但到了冬天，由于疫情我们无法出门，感觉有些憋闷。每年，我们都会去约书亚树国家公园和朋友相聚，并且，拿我的话来说，要“徒步到瘫”，今年却因北加州的第三次封控被迫放弃了。我像一只被关在笼子里的狼，在戴维斯（译者注：位于加州优洛县的一座城市）的小房子里来回踱步，满脑子都是：如果我不做点什么来打破冬天长夜憋在家里的乏味，我会发疯的。&lt;/p&gt;
+&lt;p&gt;我在疫情小圈子（译者注：一种小型的社区，将人们近距离的社交活动限制在一起）里通知了几位爱冒险的朋友，我们就这样在2021年元旦开启了绕山之旅，希望这能为新的一年开个好头，衷心希望今年比上一年更好，我们为全人类祈祷。&lt;/p&gt;
+&lt;p&gt;由于社交距离的限制，再加上一月份昼短夜长，而且近几年旧金山湾区停车场总是车满为患，我们只好仓促成行，因此保罗和珍妮（两位同行的朋友）笑称我们的旅行为“抱团乱转”。&lt;/p&gt;
+&lt;p&gt;于是我们从潘托尔护林站（译者注：塔玛佩斯山州立公园的收费停车场）向上开了半英里才开始。我们把车停靠在远离灵山的那侧路边，匆匆地从车上下来。大卫·罗伯逊借给我一条木珠项链和刺绣缎面披肩，上面汗迹斑斑，是经历过很多次“塔姆绕”的老物件。这是他去日本大峰山（位于日本奈良县南部，高1719米）了解当地古老的绕山仪式时搜罗来的。我穿上这套行头,向大卫和盖瑞表示敬意，感谢他们的教诲，感谢他们翻山越岭，千辛万苦引导人们一定要拥抱大地与自然。&lt;/p&gt;
+&lt;p&gt;一路上，一辆辆寻找车位的汽车从我们身边呼啸而过。我们唱诵一个消灾避难的陀罗尼咒语。这咒语并非源自我们的文化，但施耐德他们就是用它开启了他们绕山的仪式，而且好像也很符合当下的疫情需要；我们祈愿此行平安无虞，与举步维艰的一年作别，祈愿未来诸事顺遂。&lt;/p&gt;
+&lt;p&gt;我们横穿过去，来到“古矿道”（译者注：位于塔玛佩斯山州立公园的一处景点），向上走着，希望能找到斯奈德的诗《绕塔玛佩斯山》中描写的“露头岩石环”。&lt;/p&gt;
+&lt;p&gt;我们找到了吗？当然没有。但我们确实在一圈岩石前停了下来，静静地伫立着，沐浴着寒冬的阳光，深吸着漂浮的雾气，看着干草在风中反射着阳光。欧文和罗斯两位少年迁就了我们，和我们保持着距离。&lt;/p&gt;
+&lt;p&gt;在岩泉森林步道（译者注：位于“古矿道”西侧出口）附近，我们发现了一块蛇纹岩峭壁，上面装饰着供品：由玫瑰花瓣、松枝、松果、柠檬和酸橙围成的圆圈。我们仔细研究着这处圣龛，猜测是有所求的人曾来到这里许下愿望。这再次证明人类需要与大地建立联系。&lt;/p&gt;
+&lt;p&gt;我们到附近的一个观景台准备野餐，走近一棵巨大的花旗松，走近细看时，才发现它是一棵“谷仓树”：橡实啄木鸟在它上面钻了好几百个洞，每个洞里都填进了橡实，把它变成了自己巨大的食物储藏室。一棵巨松和无数小鸟之间竟这样相互依存，令我感叹不已。&lt;/p&gt;
+&lt;p&gt;在观景台上，我们看到滑翔伞爱好者们矫健的身姿，他们检查了装备，然后纵身跳下悬崖滑向远处的斯丁森海滩。我们和他们聊天，保罗对这项运动很是兴奋，估计恨不得就系上安全带，和他们一起越入苍穹。&lt;/p&gt;
+&lt;p&gt;居家将近一年后我有所感触：等你走出家门时，一切对你而言似乎是全新的，甚至充满了魔力。斯奈德说，他们1965年在塔玛佩斯山敲定朝圣地“……就像在与大山之灵嬉戏，没什么特殊的。” 带着这种游戏的态度，我们几位疫情圈子内同行的朋友在剩下的时间里偏离了传统的绕山路线，在山中漫步着。&lt;/p&gt;
+&lt;p&gt;午饭后，我们在岩泉森林步道上散步。沿着小道，我们走到了山间剧院，这是一个由平民保育团（译者注：平民保育团是美国在1933-1942年间，对19-24岁的单身救济户失业男性推行的以工代赈计划）在20世纪30年代建造的大型露天圆形剧场。就像魔术一样，三位蓝草音乐家（译者注：蓝草音乐是乡村音乐的一个分支）出现在我们下面的舞台上，调校好乐器，开始演奏音乐。我们坐了下来，欣赏着一年来首次听到的现场音乐。我的手臂上鸡皮疙瘩四起，有种神助的感觉——新的开始、新的希望和新的机遇传遍全身，使我们浑身一颤，我们很幸运能有如此感受。我终于放松下来，略微深吸了一口气。&lt;/p&gt;
+&lt;p&gt;傍晚时候，我们艰难地走向西点酒店，一路上欣赏着阳光、旧金山北湾和东湾辽阔的景色。几位年轻人教我们如何在保持社交距离的情况下自拍合影，我们拍下照片来纪念此次徒步旅行最珍贵的时刻。之后我们沿着马特·戴维斯小道朝潘托尔护林站折返，一两个小时后，在黄昏时分回到了我们路边停车的地方，此时那里已经具有了神圣的意味。天黑前，我们的时间足够结束这场旅程，我们互道感恩，也都对大山致意，感谢她让我们一天的旅程安全无虞。&lt;/p&gt;
+&lt;p&gt;我们跳上汽车，一路向家驶去。&lt;/p&gt;
+&lt;p&gt;凭着一张地图、一点创意、几瓶水和一种冒险精神，我们开创了一个新的家庭传统，创造出远离病毒的新娱乐方式，在疫情期间促进了我们的身心健康。我们也得以体验到自我与环境、与自然、与秀美的塔玛佩斯山的联系。在艰难时期，体会人与人之间的团结，还有人与周围大大小小的环境之间的关联，尤为重要。&lt;/p&gt;
+&lt;p&gt;凝视着车窗外的夜空，我有一种熟悉的感觉，与所有星星融为一体，完全相连。我同时发觉自己极其渺小，微不足道，我的感觉处在这两者之间。&lt;/p&gt;
+">2022年韩素音翻译大赛试译</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://zrszrs.cn/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;p&gt;本站研究内容：语料库语言学｜翻译｜批判话语分析&lt;/p&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;p&gt;24岁，是学生&lt;/p&gt;
+&lt;h2 id=&#34;兴趣爱好&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;
+&lt;p&gt;无&lt;/p&gt;
+&lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+&lt;p&gt;rzhang29@kent.edu&lt;/p&gt;
+">关于</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+  // var escape = "[{&#34;content&#34;:&#34;&lt;p&gt;&lt;a href=\&#34;http://blog.zrszrs.top/images/Baofeng%E5%AF%B6%E5%B3%B0UV5R%E4%B8%AD%E6%96%87%E8%AA%AA%E6%98%8E%E6%9B%B8.pdf\&#34;&gt;下载链接&lt;/a&gt;&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;RdsvYnwDM&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;宝锋UV-5R中文说明书&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;手台&#34;,&#34;slug&#34;:&#34;nNNNcwcdd&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://zrszrs.cn/tag/nNNNcwcdd/&#34;},{&#34;name&#34;:&#34;UV5R&#34;,&#34;slug&#34;:&#34;C4aanX7UKn&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://zrszrs.cn/tag/C4aanX7UKn/&#34;}],&#34;date&#34;:&#34;2023-02-11 22:10:19&#34;,&#34;dateFormat&#34;:&#34;2023-02-11&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://zrszrs.cn/RdsvYnwDM/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:0,&#34;words&#34;:4,&#34;minutes&#34;:1},&#34;description&#34;:&#34;下载链接\n...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;America is leading a dangerous global slide towards subsidies, export controls and protectionism&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;p&gt;Since 1945 the world economy has run according to a system of rules and norms underwritten by America. This brought about unprecedented economic integration that boosted growth, lifted hundreds of millions of people out of poverty and helped the West prevail over Soviet Russia in the cold war. Today the system is in peril. Countries are racing to subsidise green industry, lure manufacturing away from friend and foe alike and restrict the flow of goods and capital. Mutual benefit is out and national gain is in. An era of zero-sum thinking has begun.&lt;br&gt;\nThe old system was already under strain, as America’s interest in maintaining it waned after the global financial crisis of 2007-09. But President Joe Biden’s abandonment of free-market rules for an aggressive industrial policy has dealt it a fresh blow. America has unleashed vast subsidies, amounting to $465bn, for green energy, electric cars and semiconductors. These are laced with requirements that production should be local. Bureaucrats tasked with scrutinising inward investments to prevent undue foreign influence over the economy now themselves hold sway over sectors making up 60% of the stockmarket. And officials are banning the flow of ever more exports—notably of high-end chips and chipmaking equipment to China.&lt;br&gt;\nFor many in Washington, muscular industrial policy holds a seductive appeal. It could help seal America’s technological ascendancy over China, which has long pursued self-sufficiency in vital areas using state intervention. As carbon pricing is politically unfeasible, it could foster decarbonisation. And it reflects a hope that government intervention might succeed where private enterprise failed, and reindustrialise America’s heartlands.&lt;br&gt;\nThe immediate consequence, however, has been to set off a dangerous spiral into protectionism worldwide. Build a chipmaking plant in India and the government will stump up half the cost; build one in South Korea and you can avail yourself of generous tax breaks. Should seven other market economies that have announced policies for “strategic” sectors since 2020 match America’s spending as a share of GDP, total outlays would reach $1.1trn. Last year nearly a third of the cross-border business deals that came to the attention of European officials received detailed scrutiny. Countries with the raw materials needed to make batteries are eyeing export controls. Indonesia has banned nickel exports; Argentina, Bolivia and Chile may soon collaborate, OPEC-style, on the output of their lithium mines.&lt;br&gt;\nEconomic conflict with China looks increasingly inevitable. As China became more deeply integrated into the global economy at the turn of this century, many in the West predicted that it would become more democratic. The death of that hope—combined with the migration of a million manufacturing jobs to Chinese factories—caused America to fall out of love with globalisation. Today Mr Biden’s administration frets about the danger of depending on China for batteries the way Europe relied on Russia for gas before the invasion of Ukraine. Democrats and Republicans alike worry that the loss of America’s lead in advanced chipmaking to Taiwan will undermine its ability to develop artificial intelligence—on which, they predict, armies of the future will rely to plan strategy and guide missiles.&lt;br&gt;\nSome simply want to stop China becoming too rich—as if impoverishing 1.4bn people were either moral or likely to ensure peace. Others, more wisely, focus on increasing America’s economic resilience and maintaining its military edge. A reindustrialisation of the heartland, they argue, will rekindle support for market capitalism. In the meantime, as the global hegemon, America can weather other countries’ complaints.&lt;br&gt;\nThis thinking is misguided. If zero-sum policies were seen as a success, abandoning them would only become harder. In reality, even if they do remake American industry, their overall effect is more likely to cause harm by corroding global security, holding back growth and raising the cost of the green transition.&lt;br&gt;\nOne problem is their extra economic costs. The Economist estimates that replicating the cumulative investments of firms in the global tech-hardware, green-energy and battery industries would cost $3.1trn-4.6trn (3.2-4.8% of global GDP). Reindustrialisation will raise prices, hurting the poor most. Duplicating green supply chains will make it costlier for America and the world to wean themselves off carbon. History suggests that vast amounts of public money could go to waste.&lt;br&gt;\nAnother problem is the fury of friends and potential allies. America’s genius after the second world war was to realise that its interests lay in supporting openness in global commerce. As a result it pursued globalisation despite, by 1960, making up nearly 40% of global dollar GDP.&lt;br&gt;\nToday its share of output has fallen to 25% and America needs friends more than ever. Its ban on exports to China’s chipmakers will work only if the Dutch firm ASML and Japan’s Tokyo Electron also refuse to supply them with equipment. Battery supply chains will likewise be more secure if the democratic world operates as one bloc. Yet America’s protectionism is irking allies in Europe and Asia.&lt;/p&gt;\n&lt;h1 id=\&#34;integration-and-differentiation\&#34;&gt;Integration and differentiation&lt;/h1&gt;\n&lt;p&gt;America must also woo emerging powers. By 2050 India and Indonesia will be the world’s third-and fourth-largest economies, projects Goldman Sachs, a bank. Both are democracies but not close friends of America. By 2075 Nigeria and Pakistan will have gained economic clout, too. If America demands that other countries freeze out China without offering sufficient access to its own markets then it will be spurned by rising powers.&lt;br&gt;\nA final worry is that the more economic conflict proliferates, the harder it becomes to solve problems that demand global collaboration. Despite racing to secure green technology, countries are squabbling over how to help the poor world decarbonise. It is proving hard to rescue countries in debt distress, such as Sri Lanka, because of obstruction by China, a big creditor. If countries cannot co-operate to tackle some problems, these will become impossible to fix and the world will suffer accordingly.&lt;br&gt;\nNobody expects America to go back to the 1990s. It is right to seek to preserve its military pre-eminence and to avoid a dangerous dependence on China for crucial economic inputs. Yet this makes other forms of global integration all the more essential. It should seek the deepest co-operation between countries that is possible, given their respective values. Today this probably requires a number of overlapping forums and ad hoc deals. America should, for instance, join the Comprehensive and Progressive Agreement for Trans-Pacific Partnership, an Asian trade pact based on an earlier deal it helped write but then abandoned.&lt;br&gt;\nSaving globalisation may seem impossible, given the protectionist turn in American politics. But Congress’s aid to Ukraine shows that voters are not insular. Surveys suggest the popularity of free trade is recovering. There are signs that the Biden administration is responding to allies’ concerns about its subsidies.&lt;br&gt;\nYet rescuing the global order will require bolder American leadership that once again rejects the false promise of zero-sum thinking. There is still time for that to happen before the system collapses completely, damaging countless livelihoods and imperilling the causes of liberal democracy and market capitalism. The task is enormous and urgent; it could hardly be more important. The clock is ticking.&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;_yc-3p9ja&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;America is leading a dangerous global slide towards subsidies, export controls and protectionism&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;Zero-sum: The destructive new logic that threatens globalisation&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2023-01-18 11:51:06&#34;,&#34;dateFormat&#34;:&#34;2023-01-18&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://zrszrs.cn/_yc-3p9ja/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;8 min read&#34;,&#34;time&#34;:458000,&#34;words&#34;:1223,&#34;minutes&#34;:8},&#34;description&#34;:&#34;America is leading a dangerous global slide towards subsidies, export controls and protectionism\n\nSince 1945 the world e...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;&lt;a href=\&#34;#integration-and-differentiation\&#34;&gt;Integration and differentiation&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;很遗憾连续两年下来什么奖也没拿到，但我会一直记住它。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;h1 id=\&#34;疫情之下绕山依旧\&#34;&gt;疫情之下，绕山依旧&lt;/h1&gt;\n&lt;p&gt;1965年，有三位诗人兼佛教徒，盖瑞·施耐德(Gary Snyder)、艾伦·金斯堡 (Allen Ginsberg)和菲力普·惠伦 (Philip Whalen)，他们绕着塔玛佩斯山（译者注：位于美国加利福尼亚州的一座山峰）步行禅修，颇有仪式感。这种做法也叫做绕山。依照传统，他们顺时针方向徒步，敲定了沿途一些著名的自然景观，并择定了在各处举行的宗教仪轨，如佛教和印度教的唱诵、持咒、诵经和发愿。&lt;/p&gt;\n&lt;p&gt;施耐德在1992年的一次采访中表示，他希望后来人在绕山时尽情发挥创造力，可以在他们三人标明的地点驻足，也可以选择在其他地方停留。&lt;/p&gt;\n&lt;p&gt;绕山是一场为了某种目的，围绕某一圣物进行的绕行仪式，这种古老的仪式发源于诸多世界文化传统。但在现代社会，绕山意味着什么？&lt;/p&gt;\n&lt;p&gt;施耐德解释说，“人们绕山旨在表达敬意，放松心态，投入其中，停下脚步，将心智付诸一物。这就是一种驻足、观察的方式——也包括自我观见。”90年代末，我在加利福尼亚大学戴维斯分校读研究生，师从施耐德学习诗歌。从他那里，我学习到，一定要观察自己身在何处，而且要准确描述我周围的世界。这便是生物区域主义的概念。&lt;/p&gt;\n&lt;p&gt;受施耐德、金斯堡、惠伦三人精神的指引，英文教授兼摄影师大卫·罗伯森（David Robertson）在上世纪90年代接过了施耐德的大旗，带领学生们去塔玛佩斯山徒步。那是1998年3月的一天，天气很冷。我和我的丈夫（当时还是男朋友）沿着盘旋的山路上山后又下山，走了十四英里。途中，我们共经过十个朝圣地，每到一处，我们便模仿施耐德三人在1965年的做法，念诵同样的佛教和印度教的咒语、经文，并发下誓愿。罗伯森的目的是带领他在加大戴维斯分校的荒野文学课的学生走出教室，踏入自然。罗伯森的课程主要就是讲斯奈德的作品，因此带学生徒步塔玛佩斯山似乎是一个不错的选择。&lt;/p&gt;\n&lt;p&gt;一路上，我跟在他们后边徒步，穿过一片片沿海禾叶栎林、花旗松林与红杉林，翻过长满草的山坡，走进飘散着加州月桂辛辣香味的雾霭。此行用了一整天的时间。即便我身体强健，热爱徒步旅行，也觉得吃不消。但是，当我们追寻着第一代绕山之人的脚步和话语，由此得以窥见历史时，流下的每一滴汗水就都值了。话虽如此，我心里还是有一个疑问，我并非佛教徒，念出这些咒语对我有什么作用呢？对于我们来说，求助于咒语的力量又是否合适呢？我们对咒语有求知欲，并诵咒表达对传统的致敬，这就够了吗？罗伯森也不是佛教徒，当我问他这件事时，他解释说，对他而言，绕塔玛佩斯山是一种让他领悟自然之道的方法。&lt;/p&gt;\n&lt;p&gt;自1965年首次有人绕山以来，无数人像罗伯森和他的学生（包括我）一样，参与到了这场活动之中，人们亲切地称这种活动为“塔姆绕”。这一传统强烈吸引着人们，因为塔玛佩斯山是受人爱戴的母亲山，她高耸入云，与代阿布洛峰（译者注：代阿布洛峰位于加州康特拉科斯塔县，高 1173 米）和蜂鸟峰（译者注：蜂鸟峰位于加州圣克拉拉县，高1063米）遥相呼应。我们无论走到哪里，看到她都会想起自己身在何处，始终牢记自己是大山的儿女。&lt;/p&gt;\n&lt;p&gt;很多因素导致2020年并不顺利，蔓延全球的疫情便是其一。2020年末时，我和丈夫，还有喜欢徒步的17岁的儿子，已经在家里憋了好几个月了。2020年夏天，我们充分利用意外的团聚时光，在加州的山林间露营、徒步、背包旅行。但到了冬天，由于疫情我们无法出门，感觉有些憋闷。每年，我们都会去约书亚树国家公园和朋友相聚，并且，拿我的话来说，要“徒步到瘫”，今年却因北加州的第三次封控被迫放弃了。我像一只被关在笼子里的狼，在戴维斯（译者注：位于加州优洛县的一座城市）的小房子里来回踱步，满脑子都是：如果我不做点什么来打破冬天长夜憋在家里的乏味，我会发疯的。&lt;/p&gt;\n&lt;p&gt;我在疫情小圈子（译者注：一种小型的社区，将人们近距离的社交活动限制在一起）里通知了几位爱冒险的朋友，我们就这样在2021年元旦开启了绕山之旅，希望这能为新的一年开个好头，衷心希望今年比上一年更好，我们为全人类祈祷。&lt;/p&gt;\n&lt;p&gt;由于社交距离的限制，再加上一月份昼短夜长，而且近几年旧金山湾区停车场总是车满为患，我们只好仓促成行，因此保罗和珍妮（两位同行的朋友）笑称我们的旅行为“抱团乱转”。&lt;/p&gt;\n&lt;p&gt;于是我们从潘托尔护林站（译者注：塔玛佩斯山州立公园的收费停车场）向上开了半英里才开始。我们把车停靠在远离灵山的那侧路边，匆匆地从车上下来。大卫·罗伯逊借给我一条木珠项链和刺绣缎面披肩，上面汗迹斑斑，是经历过很多次“塔姆绕”的老物件。这是他去日本大峰山（位于日本奈良县南部，高1719米）了解当地古老的绕山仪式时搜罗来的。我穿上这套行头,向大卫和盖瑞表示敬意，感谢他们的教诲，感谢他们翻山越岭，千辛万苦引导人们一定要拥抱大地与自然。&lt;/p&gt;\n&lt;p&gt;一路上，一辆辆寻找车位的汽车从我们身边呼啸而过。我们唱诵一个消灾避难的陀罗尼咒语。这咒语并非源自我们的文化，但施耐德他们就是用它开启了他们绕山的仪式，而且好像也很符合当下的疫情需要；我们祈愿此行平安无虞，与举步维艰的一年作别，祈愿未来诸事顺遂。&lt;/p&gt;\n&lt;p&gt;我们横穿过去，来到“古矿道”（译者注：位于塔玛佩斯山州立公园的一处景点），向上走着，希望能找到斯奈德的诗《绕塔玛佩斯山》中描写的“露头岩石环”。&lt;/p&gt;\n&lt;p&gt;我们找到了吗？当然没有。但我们确实在一圈岩石前停了下来，静静地伫立着，沐浴着寒冬的阳光，深吸着漂浮的雾气，看着干草在风中反射着阳光。欧文和罗斯两位少年迁就了我们，和我们保持着距离。&lt;/p&gt;\n&lt;p&gt;在岩泉森林步道（译者注：位于“古矿道”西侧出口）附近，我们发现了一块蛇纹岩峭壁，上面装饰着供品：由玫瑰花瓣、松枝、松果、柠檬和酸橙围成的圆圈。我们仔细研究着这处圣龛，猜测是有所求的人曾来到这里许下愿望。这再次证明人类需要与大地建立联系。&lt;/p&gt;\n&lt;p&gt;我们到附近的一个观景台准备野餐，走近一棵巨大的花旗松，走近细看时，才发现它是一棵“谷仓树”：橡实啄木鸟在它上面钻了好几百个洞，每个洞里都填进了橡实，把它变成了自己巨大的食物储藏室。一棵巨松和无数小鸟之间竟这样相互依存，令我感叹不已。&lt;/p&gt;\n&lt;p&gt;在观景台上，我们看到滑翔伞爱好者们矫健的身姿，他们检查了装备，然后纵身跳下悬崖滑向远处的斯丁森海滩。我们和他们聊天，保罗对这项运动很是兴奋，估计恨不得就系上安全带，和他们一起越入苍穹。&lt;/p&gt;\n&lt;p&gt;居家将近一年后我有所感触：等你走出家门时，一切对你而言似乎是全新的，甚至充满了魔力。斯奈德说，他们1965年在塔玛佩斯山敲定朝圣地“……就像在与大山之灵嬉戏，没什么特殊的。” 带着这种游戏的态度，我们几位疫情圈子内同行的朋友在剩下的时间里偏离了传统的绕山路线，在山中漫步着。&lt;/p&gt;\n&lt;p&gt;午饭后，我们在岩泉森林步道上散步。沿着小道，我们走到了山间剧院，这是一个由平民保育团（译者注：平民保育团是美国在1933-1942年间，对19-24岁的单身救济户失业男性推行的以工代赈计划）在20世纪30年代建造的大型露天圆形剧场。就像魔术一样，三位蓝草音乐家（译者注：蓝草音乐是乡村音乐的一个分支）出现在我们下面的舞台上，调校好乐器，开始演奏音乐。我们坐了下来，欣赏着一年来首次听到的现场音乐。我的手臂上鸡皮疙瘩四起，有种神助的感觉——新的开始、新的希望和新的机遇传遍全身，使我们浑身一颤，我们很幸运能有如此感受。我终于放松下来，略微深吸了一口气。&lt;/p&gt;\n&lt;p&gt;傍晚时候，我们艰难地走向西点酒店，一路上欣赏着阳光、旧金山北湾和东湾辽阔的景色。几位年轻人教我们如何在保持社交距离的情况下自拍合影，我们拍下照片来纪念此次徒步旅行最珍贵的时刻。之后我们沿着马特·戴维斯小道朝潘托尔护林站折返，一两个小时后，在黄昏时分回到了我们路边停车的地方，此时那里已经具有了神圣的意味。天黑前，我们的时间足够结束这场旅程，我们互道感恩，也都对大山致意，感谢她让我们一天的旅程安全无虞。&lt;/p&gt;\n&lt;p&gt;我们跳上汽车，一路向家驶去。&lt;/p&gt;\n&lt;p&gt;凭着一张地图、一点创意、几瓶水和一种冒险精神，我们开创了一个新的家庭传统，创造出远离病毒的新娱乐方式，在疫情期间促进了我们的身心健康。我们也得以体验到自我与环境、与自然、与秀美的塔玛佩斯山的联系。在艰难时期，体会人与人之间的团结，还有人与周围大大小小的环境之间的关联，尤为重要。&lt;/p&gt;\n&lt;p&gt;凝视着车窗外的夜空，我有一种熟悉的感觉，与所有星星融为一体，完全相连。我同时发觉自己极其渺小，微不足道，我的感觉处在这两者之间。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;2022hansuyin&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;很遗憾连续两年下来什么奖也没拿到，但我会一直记住它。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;2022年韩素音翻译大赛试译&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;译文&#34;,&#34;slug&#34;:&#34;5geixU9iX&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://zrszrs.cn/tag/5geixU9iX/&#34;}],&#34;date&#34;:&#34;2022-07-18 19:13:51&#34;,&#34;dateFormat&#34;:&#34;2022-07-18&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://zrszrs.cn/2022hansuyin/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;10 min read&#34;,&#34;time&#34;:590000,&#34;words&#34;:2929,&#34;minutes&#34;:10},&#34;description&#34;:&#34;很遗憾连续两年下来什么奖也没拿到，但我会一直记住它。\n\n疫情之下，绕山依旧\n1965年，有三位诗人兼佛教徒，盖瑞·施耐德(Gary Snyder)、艾伦·金斯堡 (Allen Ginsberg)和菲力普·惠伦 (Philip Whalen)...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%96%AB%E6%83%85%E4%B9%8B%E4%B8%8B%E7%BB%95%E5%B1%B1%E4%BE%9D%E6%97%A7\&#34;&gt;疫情之下，绕山依旧&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;关于本站\&#34;&gt;🏠 关于本站&lt;/h2&gt;\n&lt;p&gt;本站研究内容：语料库语言学｜翻译｜批判话语分析&lt;/p&gt;\n&lt;h2 id=\&#34;博主是谁\&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;\n&lt;p&gt;24岁，是学生&lt;/p&gt;\n&lt;h2 id=\&#34;兴趣爱好\&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;\n&lt;p&gt;无&lt;/p&gt;\n&lt;h2 id=\&#34;联系我呀\&#34;&gt;📬 联系我呀&lt;/h2&gt;\n&lt;p&gt;rzhang29@kent.edu&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;about&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;关于&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2019-01-25 19:09:48&#34;,&#34;dateFormat&#34;:&#34;2019-01-25&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://zrszrs.cn/about/&#34;,&#34;hideInList&#34;:true,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:12000,&#34;words&#34;:60,&#34;minutes&#34;:1},&#34;description&#34;:&#34;\n欢迎来到我的小站呀，很高兴遇见你！🤝\n\n🏠 关于本站\n本站研究内容：语料库语言学｜翻译｜批判话语分析\n👨‍💻 博主是谁\n24岁，是学生\n⛹ 兴趣爱好\n无\n📬 联系我呀\nrzhang29@kent.edu\n...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99\&#34;&gt;🏠 关于本站&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81\&#34;&gt;👨‍💻 博主是谁&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD\&#34;&gt;⛹ 兴趣爱好&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80\&#34;&gt;📬 联系我呀&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
+  // var json = escape.substr(1, escape.length - 2);
+  // var datas = json.split(',');
+  // for (let i=0; i < datas.length; i++) {
+  //   let item = datas[i];
+  //   let attrs = item.split('34;:&#34')
+  //   debugger
+  //   console.log(datas[i])
+  // }
+  let escapeMap = new Map();
+  escapeMap.set('&#34;', '"');
+  escapeMap.set('&gt;', '>');
+  escapeMap.set('&#39;', "'");
+  escapeMap.set('&lt;', '<');
+  escapeMap.set('&quot;', '"');
+  escapeMap.set('&amp;', '&');
+</script> -->
+
+
+</html>
